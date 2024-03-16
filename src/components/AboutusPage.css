@@ -31,25 +31,26 @@
   }
   
   .about-logo {
-    max-width: 350px; 
+    max-width: 300px; 
     margin-top: 2%;
   }
   
   .contact-button {
     margin-top: 20px;
     text-align: center;
+    padding-bottom: 62px;
   }
   
   .contact-button button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007bff; 
-    color: #fff;
+    background-color: #264575; 
+    color: #ffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
   }
   
   .contact-button button:hover {
-    background-color: #0056b3;
+    background-color: #5e8bce;
   }

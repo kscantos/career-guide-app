@@ -4,8 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 25px 0px;
+  padding: 0px 25px 0px;
 }
+body {
+  background-color: rgb(223, 202, 221);
+  }
 
 .App-header h2 {
   font-size: 30px; 
@@ -14,7 +17,7 @@
 
 .login-button,
 .signup-button {
-  background-color: #007bff;
+  background-color: #264575;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -23,11 +26,12 @@
   margin-right: 10px;
   margin-top: 60px;
   font-size: 15px;
+  border-radius: 10px;
 }
 
 .login-button:hover,
 .signup-button:hover {
-  background-color: #0056b3;
+  background-color: #5e8bce;
 }
 
 .nav-links {
@@ -71,4 +75,5 @@
   padding-right: 20%;
   font-size: 19px;
   margin-top: 30px;
+  line-height: 1.6;
 }
