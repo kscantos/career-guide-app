@@ -11,7 +11,7 @@ function Home({ setShowMainHeader }) {
       <div className="content">
         {/* Add content for the home page */}
         <h2>Welcome to Workwanders</h2>
-        <p>This is the homepage content.</p>
+        <p>add intro</p>
       </div>
     </div>
   );
