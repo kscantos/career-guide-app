@@ -1,0 +1,59 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 50px;
+  background-color: #36635b;
+}
+
+.course {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.course::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  border: 2px solid #007bff;
+  border-radius: 25px;
+  z-index: -1;
+}
+
+.course h2 {
+  font-size: 24px;
+}
+
+.course p {
+  font-size: 16px;
+}
+
+.options-button,
+.test-button,
+.browse-button,
+.forum-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.options-button:hover,
+.test-button:hover,
+.browse-button:hover,
+.forum-button:hover {
+  background-color: #0056b3;
+}

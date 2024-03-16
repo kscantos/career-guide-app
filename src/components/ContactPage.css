@@ -1,0 +1,30 @@
+.back-home {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .back-home button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: 2px solid #007bff; /* Add border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
+  
+  .back-home button:hover {
+    background-color: #0056b3;
+    border-color: #0056b3; 
+  }
+  
+  .contact-container {
+    font-size: 20px;
+  }
+
+
+  .contact-details {
+    font-size: 18px;
+    margin: 70px;
+    font-style: italic;
+  }

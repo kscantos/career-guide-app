@@ -4,7 +4,7 @@ import './App.css';
 import LoginPage from './components/LoginPage';
 import SignupPage from './components/SignupPage'; 
 import Home from './components/HomePage';
-import About from './components/AboutPage';
+import About from './components/AboutusPage';
 import Contact from './components/ContactPage';
 import Courses from './components/CoursesPage';
 
@@ -18,7 +18,7 @@ function App() {
           <header className="App-header">
             <div>
               <h1>Workwanders</h1>
-              <p>tagline</p>
+              <p>Where your future begins.</p>
             </div>
             <div>
               <nav>
@@ -27,8 +27,6 @@ function App() {
                   <li><Link to="/about">About</Link></li>
                   <li><Link to="/courses">Courses</Link></li>
                   <li><Link to="/contact">Contact Us</Link></li>
-                  <li><Link to="/login" onClick={() => setShowMainHeader(false)}>Login</Link></li>
-                  <li><Link to="/signup" onClick={() => setShowMainHeader(false)}>Signup</Link></li> 
                 </ul>
               </nav>
             </div>

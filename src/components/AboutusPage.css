@@ -1,0 +1,55 @@
+.about-container {
+    padding: 20px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .about-info {
+    flex: 1;
+  }
+  
+  .about-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-left: 20%;
+  }
+  
+  .about-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-left: 20%;
+  }
+  
+  .logo-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .about-logo {
+    max-width: 350px; 
+    margin-top: 2%;
+  }
+  
+  .contact-button {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .contact-button button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-button button:hover {
+    background-color: #0056b3;
+  }

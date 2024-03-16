@@ -1,26 +1,36 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './LoginPage.css';
 
 function LoginPage() {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Email:', email);
+    console.log('Password:', password);
+    setEmail('');
+    setPassword('');
+  };
+
   return (
     <div className="login-page">
-      <header>
-        <nav>
-          <ul className="nav-links">
-            <li><Link to="/home">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/courses">Courses</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
-          </ul>
-        </nav>
-      </header>
       <div className="login-form-container">
         <h2>Login</h2>
-        <form className="login-form">
-          <input type="text" placeholder="Email" />
-          <input type="password" placeholder="Password" />
+        <form className="login-form" onSubmit={handleSubmit}>
+          <input 
+            type="text" 
+            placeholder="Email" 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)} 
+          />
+          <input 
+            type="password" 
+            placeholder="Password" 
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)} 
+          />
           <button type="submit">Login</button>
         </form>
         <p>Don't have an account? <Link to="/signup">Sign up</Link></p>
