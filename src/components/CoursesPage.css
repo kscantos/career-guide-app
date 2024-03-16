@@ -42,11 +42,11 @@
 .test-button,
 .browse-button,
 .forum-button {
-  background-color: #007bff;
+  background-color: #264575;
   color: #fff;
   border: none;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 20px;
   margin-top: 10px;
   cursor: pointer;
 }
@@ -55,5 +55,5 @@
 .test-button:hover,
 .browse-button:hover,
 .forum-button:hover {
-  background-color: #0056b3;
+  background-color: #5e8bce;
 }
