@@ -10,7 +10,8 @@ function ContactPage({ setShowMainHeader }) {
     <div className="contact-container">
       <h2>Contact Us</h2>
       <p>
-        Feel free to contact us if you have any questions or inquiries. We are always happy to hear from you!
+        Feel free to contact us if you have any questions or inquiries. 
+        We are always happy to hear from you!
       </p>
       <div className="contact-details">
         <p>Email: contact@workwanders.com</p>
