@@ -41,7 +41,8 @@
 .options-button,
 .test-button,
 .browse-button,
-.forum-button {
+.forum-button,
+.btn-primary {
   background-color: #264575;
   color: #fff;
   border: none;
@@ -54,6 +55,7 @@
 .options-button:hover,
 .test-button:hover,
 .browse-button:hover,
-.forum-button:hover {
+.forum-button:hover,
+.btn-primary:hover {
   background-color: #5e8bce;
 }
