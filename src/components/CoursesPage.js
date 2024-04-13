@@ -43,6 +43,7 @@ const CoursesPage = () => {
           <span className="visually-hidden">Next</span>
         </button>
       </div>
+      
       <div className="row">
         <div className="col-md-6">
           <div className="course">

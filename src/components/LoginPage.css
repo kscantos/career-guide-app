@@ -1,90 +1,63 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+
+.login-section {
+  padding: 100px 0;
+  background-color: #d4b7cf;
 }
 
-.login-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
+
+
+.login-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #7d4b94;
+  animation: slideInDown 1s ease-out;
 }
 
-nav {
-  width: 100%;
-  padding: 10px 0;
+.loin-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease-out;
 }
 
-.nav-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+.login-img {
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+  animation: scaleUp 1s ease-out;
 }
 
-.nav-links li {
-  display: inline;
-  margin-right: 10px;
+.about-img:hover {
+  transform: scale(1.1);
 }
 
-.nav-links li a {
-  color: white;
-  text-decoration: none;
+@keyframes slideInDown {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
 }
 
-.nav-links li a:hover {
-  text-decoration: underline;
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
 }
 
-.login-form-container {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-  width: 40%;
-  max-width: 400px;
-  margin-bottom: 20%;
-  margin-top: 7%;
+@keyframes scaleUp {
+  from {
+      transform: scale(0.5);
+      opacity: 0;
+  }
+  to {
+      transform: scale(1);
+      opacity: 1;
+  }
 }
 
-.login-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.login-form input {
-  margin-bottom: 15px;
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.login-form button {
-  background-color: #264575;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.login-form button:hover {
-  background-color: #5e8bce;
-}
-
-.login-form p {
-  margin-top: 15px;
-  text-align: center;
-}
-
-.login-form p a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.login-form p a:hover {
-  text-decoration: underline;
-}
