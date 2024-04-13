@@ -1,56 +1,60 @@
-.about-container {
-    padding: 20px;
+
+.about-section {
+  padding: 100px 0;
+  background-color: #e3cedf;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #7d4b94;
+  animation: slideInDown 1s ease-out;
+}
+
+.about-text {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 5px;
+  animation: fadeIn 1s ease-out;
+}
+
+.about-img {
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+  animation: scaleUp 1s ease-out;
+}
+
+.about-img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes slideInDown {
+  from {
+      transform: translateY(-100%);
+      opacity: 0;
   }
-  
-  .about-content {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  to {
+      transform: translateY(0);
+      opacity: 1;
   }
-  
-  .about-info {
-    flex: 1;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
   }
-  
-  .about-info h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    margin-left: 20%;
+  to {
+      opacity: 1;
   }
-  
-  .about-info p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-left: 20%;
+}
+
+@keyframes scaleUp {
+  from {
+      transform: scale(0.5);
+      opacity: 0;
   }
-  
-  .logo-container {
-    flex: 1;
-    display: flex;
-    justify-content: center;
+  to {
+      transform: scale(1);
+      opacity: 1;
   }
-  
-  .about-logo {
-    max-width: 300px; 
-    margin-top: 2%;
-  }
-  
-  .contact-button {
-    margin-top: 20px;
-    text-align: center;
-    padding-bottom: 62px;
-  }
-  
-  .contact-button button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #264575; 
-    color: #ffff;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  .contact-button button:hover {
-    background-color: #5e8bce;
-  }
+}

@@ -1,0 +1,28 @@
+
+.navbar {
+  background-image: linear-gradient(to right, #7d4b94, #000000);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 25px 0px;
+}
+
+.navbar-custom {
+  background: linear-gradient(to right, #7d4b94, #000000); 
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-subtext {
+  font-size: 0.8rem; 
+  color: white; 
+}
+
+.navbar-quote {
+  font-size: 0.8rem; 
+  color: white; 
+  margin-right: 1px;
+}

@@ -1,62 +1,45 @@
-import React, { useState } from 'react';
-import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import './App.css'; 
+import Header from './components/Header.js'; 
 import LoginPage from './components/LoginPage';
 import SignupPage from './components/SignupPage'; 
 import Home from './components/HomePage';
 import About from './components/AboutusPage';
 import Contact from './components/ContactPage';
 import Courses from './components/CoursesPage';
+import Footer from './components/Footer.js';
 
 function App() {
-  const [showMainHeader, setShowMainHeader] = useState(true);
-
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
-        {showMainHeader && (
-          <header className="App-header">
-            <div>
-              <h1>Workwanders</h1>
-              <p>Where your future begins.</p>
-            </div>
-            <div>
-              <nav>
-                <ul className="nav-links">
-                  <li><Link to="/home">Home</Link></li>
-                  <li><Link to="/about">About</Link></li>
-                  <li><Link to="/courses">Courses</Link></li>
-                  <li><Link to="/contact">Contact Us</Link></li>
-                </ul>
-              </nav>
-            </div>
-          </header>
-        )}
+        <Header />
+        
         <Switch>
           <Route path="/login">
-            <LoginPage setShowMainHeader={setShowMainHeader} />
+            <LoginPage />
           </Route>
           <Route path="/signup"> 
-            <SignupPage setShowMainHeader={setShowMainHeader} />
+            <SignupPage />
           </Route>
           <Route path="/home">
-            <Home setShowMainHeader={setShowMainHeader} />
+            <Home />
           </Route>
           <Route path="/about">
-            <About setShowMainHeader={setShowMainHeader} />
+            <About />
           </Route>
           <Route path="/courses">
-            <Courses setShowMainHeader={setShowMainHeader} />
+            <Courses />
           </Route>
           <Route path="/contact">
-            <Contact setShowMainHeader={setShowMainHeader} />
+            <Contact />
           </Route>
         </Switch>
-        <footer className="footer">
-          <p>&copy; 2024 Workwanders</p>
-        </footer>
+
+        <Footer/>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 

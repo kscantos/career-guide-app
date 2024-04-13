@@ -1,22 +1,12 @@
-.App-header {
-  background-image: linear-gradient(to right, #7d4b94, #000000);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 25px 0px;
-}
+
+
 body {
   background-color: rgb(223, 202, 221);
-  }
-
-.App-header h2 {
-  font-size: 30px; 
-  margin: 0;
 }
 
-.login-button,
-.signup-button {
+
+
+.btn-primary {
   background-color: #264575;
   color: white;
   border: none;
@@ -29,8 +19,8 @@ body {
   border-radius: 10px;
 }
 
-.login-button:hover,
-.signup-button:hover {
+.btn-primary:hover,
+.btn-success:hover {
   background-color: #5e8bce;
 }
 
