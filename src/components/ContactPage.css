@@ -1,30 +1,83 @@
 .back-home {
-    margin-top: 20px;
-    text-align: center;
-  }
-  
-  .back-home button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #264575;
-    color: #fff;
-    border: 2px solid #264575; /* Add border */
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; }
-  
-  .back-home button:hover {
-    background-color: #5e8bce;
-    border-color: #5e8bce; 
-  }
-  
-  .contact-container {
-    font-size: 20px;
-  }
+  margin-top: 20px;
+  text-align: center;
+}
+
+.back-home button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #264575;
+  color: #fff;
+  border: 2px solid #264575;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.back-home button:hover {
+  background-color: #5e8bce;
+  border-color: #5e8bce;
+}
+
+.contact-container {
+  font-size: 20px;
+  margin: 50px;
+}
+
+.contact-info-form-wrapper {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+}
+
+.contact-info {
+  flex: 1; 
+  padding-right: 40px; 
+  padding-top: 40px;
+}
+
+.contact-form {
+  flex: 1; 
+  padding-left: 40px; 
+  padding-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px; 
+}
+
+label {
+  display: block;
+  font-weight: 600; 
+  padding-right: 20px;
+  text-align: left;
+}
+
+input,
+textarea {
+  width: 60%; 
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  font-size: 14px; 
+}
+
+.message {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #264575;
+  color: #fff;
+  border: none; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.message:hover {
+  background-color: #5e8bce
+}
 
 
-  .contact-details {
-    font-size: 18px;
-    margin: 70px;
-    font-style: italic;
-  }
+.h2 {
+  margin-bottom: 50px;
+}

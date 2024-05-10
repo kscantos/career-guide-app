@@ -10,4 +10,4 @@ function Forumpage() {
   );
 }
 
-export default Forumpage;
+export default Forumpage

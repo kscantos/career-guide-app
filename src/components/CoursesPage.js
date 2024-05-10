@@ -70,7 +70,7 @@ const CoursesPage = () => {
           <div className="course">
             <h2>Career Advice</h2>
             <p>Join our forum for career advice</p>
-            <button className="btn btn-primary">Go to Forum</button>
+            <button className="btn btn-primary" >Go to Forum</button>
           </div>
         </div>
       </div>
